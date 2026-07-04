@@ -1,0 +1,203 @@
+/* ===========================
+   Reset
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Body
+=========================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+main {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   Heading
+=========================== */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+/* ===========================
+   Sections
+=========================== */
+section {
+    margin-bottom: 25px;
+}
+
+/* ===========================
+   Form
+=========================== */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* ===========================
+   Filter Buttons
+=========================== */
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section:nth-of-type(2) button {
+    padding: 8px 18px;
+    border: none;
+    background: #ecf0f1;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section:nth-of-type(2) button:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* ===========================
+   Task List
+=========================== */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+li span {
+    flex: 1;
+}
+
+/* ===========================
+   Task Buttons
+=========================== */
+li button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:nth-of-type(1) {
+    background: #f39c12;
+    color: white;
+}
+
+li button:nth-of-type(1):hover {
+    background: #d68910;
+}
+
+li button:nth-of-type(2) {
+    background: #e74c3c;
+    color: white;
+}
+
+li button:nth-of-type(2):hover {
+    background: #c0392b;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer button {
+    padding: 10px 16px;
+    border: none;
+    background: #2ecc71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #27ae60;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+
+    li button {
+        flex: 1;
+    }
+}
