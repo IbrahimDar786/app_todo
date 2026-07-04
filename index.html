@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+</head>
+<body>
+
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+
+    <main>
+
+        <!-- Add New Task -->
+        <section>
+            <h2>Add Task</h2>
+            <form>
+                <input
+                    type="text"
+                    placeholder="Enter a new task"
+                    aria-label="Task"
+                >
+                <button type="submit">Add</button>
+            </form>
+        </section>
+
+        <!-- Task Filters -->
+        <section>
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+        </section>
+
+        <!-- Task List -->
+        <section>
+            <h2>Tasks</h2>
+
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <span>Learn HTML</span>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+
+                <li>
+                    <input type="checkbox">
+                    <span>Practice CSS</span>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+
+                <li>
+                    <input type="checkbox">
+                    <span>Build To-Do App</span>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Total Tasks: 3</p>
+            <button>Clear Completed</button>
+        </footer>
+
+    </main>
+
+</body>
+</html>
